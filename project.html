@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetR.css">
+    <title>flipkartclone.com</title>
+</head>
+<body>
+
+
+<!--Flipkart logo -->
+    <header id="head">
+        <div id="header_cont">
+            <div id="brand_logo" class="header_cont_el"><img src="images/flipkart.png" alt="No Connection" id="brand_logo_img"></div>
+<!--Search Bar-->    
+       <div id="search" class="header_cont_el">
+                <div id="search_icon_cont" class="search_el"><div id="search_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></div></div>
+                
+                    <form action="">
+                        <input type="text" id="search_bar" class="search_el" placeholder="Search from Product,Brand and More">
+                    </form>
+       
+            </div>
+
+<!--nav controls -->  
+            <div id="others" class="header_cont_el">
+<!--login button -->  
+                <div id="login_cont" class="other_cont"><div id="login_container"><div id="login" class="header_cont_el_el"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="login_cart"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg></div><div id="login_text" class="other_text"><div id="login_name">Login</div></div><div id="login_side" class="other_text"><div id="login_side_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rotating_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div></div></div>
+            
+            <div id="login_pop_box">
+                <div id="login_pop_box_head">
+                    <div id="login_pop_box_nc"><div class="login_pop_box_nc_text">New Customer?</div></div>
+                    <div id="login_pop_box_su"><div class="login_pop_box_su_text">Sign Up</div></div>
+                </div>
+
+                <div class="login_pop_box_el">
+                    <div class="login_pop_box_el_icon"><div class="login_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg></div></div>
+                    <div class="login_pop_box_el_about"><div class="login_pop_box_el_icon_about_text">My Profile</div></div>
+                </div>
+
+                <div class="login_pop_box_el">
+                    <div class="login_pop_box_el_icon"><div class="login_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg></div></div>
+                    <div class="login_pop_box_el_about"><div class="login_pop_box_el_icon_about_text">Flipkart Plus Zone</div></div>
+                </div>
+
+                <div class="login_pop_box_el">
+                    <div class="login_pop_box_el_icon"><div class="login_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M50.7 58.5L0 160l208 0 0-128L93.7 32C75.5 32 58.9 42.3 50.7 58.5zM240 160l208 0L397.3 58.5C389.1 42.3 372.5 32 354.3 32L240 32l0 128zm208 32L0 192 0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-224z"/></svg></div></div>
+                    <div class="login_pop_box_el_about"><div class="login_pop_box_el_icon_about_text">Orders</div></div>
+                </div>
+
+                <div class="login_pop_box_el">
+                    <div class="login_pop_box_el_icon"><div class="login_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg></div></div>
+                    <div class="login_pop_box_el_about"><div class="login_pop_box_el_icon_about_text">Wishlist</div></div>
+                </div>
+
+                <div class="login_pop_box_el">
+                    <div class="login_pop_box_el_icon"><div class="login_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"/></svg></div></div>
+                    <div class="login_pop_box_el_about"><div class="login_pop_box_el_icon_about_text">Rewards</div></div>
+                </div>
+
+                <div class="login_pop_box_el">
+                    <div class="login_pop_box_el_icon"><div class="login_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 80c8.8 0 16 7.2 16 16l0 32L48 128l0-32c0-8.8 7.2-16 16-16l448 0zm16 144l0 192c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16l0-192 480 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-112 0z"/></svg></div></div>
+                    <div class="login_pop_box_el_about"><div class="login_pop_box_el_icon_about_text">Gift Cards</div></div>
+                </div>
+            </div>
+            
+            </div>
+<!--Cart Button -->
+                <div id="cart_cont" class="other_cont"><div id="cart" class="header_cont_el_el"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="cart_icon"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></div><div id="cart_text" class="other_text"><div id="cart_name">Cart</div></div></div>
+<!--Become A Seller-->               
+                <div id="seller_cont" class="other_cont"><div id="seller" class="header_cont_el_el"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" id="seller_icon"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z"/></svg></div><div id="seller_text" class="other_text"><div id="seller_name" style="margin-bottom: 5px; display: block;">Become A Seller</div></div></div>
+<!--Three Dots Button -->               
+                <div id="more" class="other_cont" style="height: 50pxpx; width: 25px; cursor: pointer;margin-top: 10px;"><div style="height: 5px; width: 5px;display: block;margin-left: auto;margin-right: auto;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" id="more_icon"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></div>
+                
+                    <div id="extra_pop_box">
+                        <div class="extra_pop_box_el">
+                            <div class="extra_pop_box_el_icon"><div class="extra_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416l400 0c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4l0-25.4c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112l0 25.4c0 47.9 13.9 94.6 39.7 134.6L72.3 368C98.1 328 112 281.3 112 233.4l0-25.4c0-61.9 50.1-112 112-112zm64 352l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg></div></div>
+                            <div class="extra_pop_box_el_about"><div class="extra_pop_box_el_icon_about_text">Notification Preferences</div></div>
+                        </div>
+        
+                        <div class="extra_pop_box_el">
+                            <div class="extra_pop_box_el_icon"><div class="extra_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48l0 128c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80l0-16 0-48 0-48C0 146.6 114.6 32 256 32s256 114.6 256 256l0 48 0 48 0 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48l0-128c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"/></svg></div></div>
+                            <div class="extra_pop_box_el_about"><div class="extra_pop_box_el_icon_about_text">24x7 Customer Care</div></div>
+                        </div>
+        
+                        <div class="extra_pop_box_el">
+                            <div class="extra_pop_box_el_icon"><div class="extra_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160 384 160z"/></svg></div></div>
+                            <div class="extra_pop_box_el_about"><div class="extra_pop_box_el_icon_about_text">Advertise</div></div>
+                        </div>
+        
+                        <div class="extra_pop_box_el">
+                            <div class="extra_pop_box_el_icon"><div class="extra_pop_box_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg></div></div>
+                            <div class="extra_pop_box_el_about"><div class="extra_pop_box_el_icon_about_text">Download App</div></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div id="bars_cont" class="other_cont"><div id="side_bar" class="header_cont_el_el"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="side_bar_img"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></div></div>
+
+
+        </div>
+
+        
+
+        
+    </header>
+
+<!--choice -->
+    <div id="choice_list">
+<!--Grocery -->
+        <div class="choice" style="margin-left: 8.7vw;"><div class="choice_cont"><img src="Images/grocery.png" alt="No Connection" class="choice_img"><p class="choice_name">Grocery</p></div></div>     
+<!--Mobiles --> 
+        <div class="choice"><div class="choice_cont"><img src="Images/mobile.png" alt="No Connection" class="choice_img"><p class="choice_name">Mobile</p></div></div>   
+<!--Fashion -->
+        <div class="choice" id="choice_fashion"><div class="choice_cont"><img src="Images/fashion.png" alt="No Connection" class="choice_img"><div class="choice_name_cont"><p class="choice_name" >Fashion</p><p class="choice_arrow" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rotating_arrow" class="rotate_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></p></div></div>
+        
+            <div id="fashion_pop_box">
+               
+                <div class="fashion_pop_box_el_cont" id="fash_01"><div class="fashion_pop_box_el">Men's Top Wear</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_01_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Men's Top Wear</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's T-shirt</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Formal Shirt</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Casual Shirt</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Kurtas</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Ethnic Set</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Blazzer</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Raincoat</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Windcheaters</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Suits</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Fabrics</div></div>
+                    </div>    
+                </div>
+                <div class= "fashion_pop_box_el_cont" id="fash_02"><div class="fashion_pop_box_el">Men's Bottom Wear</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_02_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Men's Bottom Wear</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Jeans</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Trousers</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Trackpants</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Shorts</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Cargos Set</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Threefourth</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Pyjamas and Loungepants</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Dhoti</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Ethnic Pants</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_03"><div class="fashion_pop_box_el">Women Ethenic</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_03_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Women Ethenic</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Sarees</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Kurtas and Kurtis</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Kurta Set and Salawar Suits</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Ethnic Dresses</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Dress Materials</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Grown</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Lehenga cholis</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Leggings and Patialas</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Blouse</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Dupatta</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_04"><div class="fashion_pop_box_el">Men Footwear</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_04_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Men's Footwear</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Sports Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Casual Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Sandaksand Floaters</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Slippers and Flip Flops</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Formal Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Ethnic Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Shoe Care</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_05"><div class="fashion_pop_box_el">Women Footwear</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_05_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Women Footwear</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Flats</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Heels</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Wedge</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Slippers Flip Flops</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Casual Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Ballerinas</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Ethnic Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Sneakers</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Walking Shoes</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Boots</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_06"><div class="fashion_pop_box_el">Watches and Accessories</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_06_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Watches and Accessories</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">Men and Women Watches</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men and Women Sunglasses</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Wallets</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men and Women Belts</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men Fashion Jewellery</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Precious Articles</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Kids Accessories</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Woman Fashion Jewellery</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_07"><div class="fashion_pop_box_el">Women Western</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_07_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Women Western</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Tops</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Dresses</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women T-shirts and Polo T-shirt</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Jeans</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Nighties and Night Dresses</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Nightsuit</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Track Pants</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Trouser</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Track Pants</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Trouser</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Jumpsuit</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Shapewear</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Sports Bra</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_08"><div class="fashion_pop_box_el">Bags, Suitcase and luggage</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_08_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Bags, Suitcase and luggage</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Bags and Backpacks</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Suitcases and Trolleys</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Dufflebags</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Rusksacks</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Handbags</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Slingbags</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women's Clutches and Wallets</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Messenger Bags</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Travel Accessories</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_09"><div class="fashion_pop_box_el">Kids</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_09_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Kids</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Girls Dresses</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys Innerwear</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls T-shirt</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls Combosets</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls Ethnic Wear</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls Jeans</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls Shorts</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls Trackpants</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Boys and Girls Innerwear</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Infant Wear</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Kids Slippers Flip Flops</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Kids Sports Shoes</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_10"><div class="fashion_pop_box_el">Essentials</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_10_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Essentials</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Briefs and Trunks</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Vests</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Boxer</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Lingerie Set</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Bra</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women Panty</div></div>
+                    </div>
+                </div>
+                <div class="fashion_pop_box_el_cont" id="fash_11"><div class="fashion_pop_box_el">Winter</div><div class="fashion_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="fash_11_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">ore in Winter</div></div>
+                        <div class="pop_up_el_cont" ><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Jackets</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Sweatshirts</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Sweaters</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Men's Thermals</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women's Jackets</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women's Sweatshirts</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women's Sweaters and Cardigans</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Women's Shrugs</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Kids SweatShirts</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Kids Jackets</div></div>
+                    </div>
+                </div>
+                
+           </div>
+        </div>      
+<!--Electronics -->
+        <div class="choice" id="choice_elec"><div class="choice_cont"><img src="Images/electronics.png" alt="No Connection" class="choice_img"><div class="choice_name_cont"><p class="choice_name" >Electronics</p><p class="choice_arrow" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rotating_arrow" class="rotate_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></p></div></div>
+    
+            <div id="elec_pop_box">
+               
+                <div class="elec_pop_box_el_cont" id="elec_01"><div class="elec_pop_box_el">Audio</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                    <div class="pop_up_box" id="elec_01_pop_up">
+                        <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Audio</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Bluetooth Headphones</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Wired Headphones</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">True Wireless Earbuds</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Bluetooth Speakers</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Soundbars</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Home Theatres</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">TV Streaming Device</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Remote Control</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">DTH Set top box</div></div>
+                        <div class="pop_up_el_cont"><div class="pop_up_el">Headphones Pouch and Case Covers</div></div>
+                    </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_02"><div class="elec_pop_box_el">Electronics GST Store</div></div>
+                <div class="elec_pop_box_el_cont" id="elec_03"><div class="elec_pop_box_el">Cameras and Accessories</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_03_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Cameras and Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">DSLR and Mirrorless</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sports and Action</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Point and Shoot</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Instant Cameras</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Camcorders</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Camera Tripods</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Camera Lenses</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Drone</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Flashes</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gimbals</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Binoculars</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Other Camera Accessories</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_04"><div class="elec_pop_box_el">Computer Peripherals</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_04_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Computer Peripherals</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Printers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Monitors</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Projectors</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Ink Cartridges</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Ink Bottles</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Receipt Printers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Lamination Machines</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Note Counting Machines</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Barcode Scanner</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Currency Detector</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_05"><div class="elec_pop_box_el">Gaming</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_05_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Gaming</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Consoles</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Mouse</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Keyboard</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gamepads</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Games</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Accessory Kits</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Accessories Combo</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Mousepads</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Membership Cards</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Controllers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Other Gaming Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Components</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_06"><div class="elec_pop_box_el">Health and Personal Care</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_06_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Health and Personal Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Trimmers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Shavers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Hair Straighteners</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Hair Dryers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Epilators</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Glucometers and Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Blood Pressure Monitors</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Digital Thermometers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Weighing Scales</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Massagers</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_07"><div class="elec_pop_box_el">Laptop Accessories</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_07_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Laptop Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mouse</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Laptop Keyboard</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Router</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Data Cards</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">UPS</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">USB Gadgets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Security Store</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Laptop Battery</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Laptop Adapter</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Wireless USB Adapter</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Processor</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Others Accessories</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_08"><div class="elec_pop_box_el">Laptop and Desktop</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_08_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Laptop and Desktop</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Laptops</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gaming Laptops</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Desktop PCs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All in One PCs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mini PCs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Tower PCs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">PC Finder</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_09"><div class="elec_pop_box_el">Mobile Accessories</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_09_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Mobile Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Plain Cases</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Designer Cases</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Screen Guards</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Camera Lens Protector</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Tablet Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Cable</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Charging</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Pouches</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Flash</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Holder</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile USB Gadgets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Accessories Combos</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_10"><div class="elec_pop_box_el">Powerbank</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_10_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Powerbank</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Powerbank</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_11"><div class="elec_pop_box_el">Smart Home automation</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_11_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Smart Home automation</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Smart Assistants</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Smart Lights</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Smart Camera</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Smart Switches</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Smart Door Locks</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sensor and Alarms</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_12"><div class="elec_pop_box_el">Smart Wearables</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_12_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Smart Wearables</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Smart Bands</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_13"><div class="elec_pop_box_el">Storage</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_13_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Storage</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Memory Card</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Computer Storge Pendrive</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mobile Storage Pendrive</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">External Hard Drive</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Internal Hard Drive</div></div>
+                </div>
+                </div>
+                <div class="elec_pop_box_el_cont" id="elec_14"><div class="elec_pop_box_el">Tablets</div><div class="elec_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="elec_14_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Tablets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">ALL</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Tablets With Call Facility</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Tablets Without Call Facility</div></div>
+                </div>
+                </div>
+                
+            </div>
+        </div>  
+<!--Furniture -->       
+        <div class="choice" id="choice_fur"><div class="choice_cont"><img src="Images/furniture.png" alt="No Connection" class="choice_img"><div class="choice_name_cont"><p class="choice_name" >Furniture</p><p class="choice_arrow" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rotating_arrow" class="rotate_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></p></div></div>
+    
+            <div id="fur_pop_box">
+               
+                <div class="fur_pop_box_el_cont" id="fur_01"><div class="fur_pop_box_el">Home Furnishing</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_01_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Home Furnishing</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bed Lines</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bedsheets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Blankets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Curtains and Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bath Lines</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Floor covering</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Covers and protector</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cushions and Pillow</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Kitchen Lines Sets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Table Lines Sets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sofa and Curtains fabrics</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Branded Collection</div></div>
+                </div>               
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_02"><div class="fur_pop_box_el">Furniture</div></div>
+
+                <div class="fur_pop_box_el_cont" id="fur_03"><div class="fur_pop_box_el">Living Room Furniture</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_03_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Living Room Furniture</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sofas Set and Sectionals</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">TV Units</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Dining Sets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sofa Beds</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Recliners</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Living Room Chair</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cabinet and Drawers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bookshelves</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Shoe Racks</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_04"><div class="fur_pop_box_el">Kitchen and Dining</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_04_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Kitchen and Dining</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cookware</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Knives, Chopper and Cutters</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gas Stoves and Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Kitchen Tools</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Tableware and Dinnerware</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Containers and KitchenStorage</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Barware</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bakeware</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Handjuicers and Grinders</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Disposable Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Outdoor Cooking</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_05"><div class="fur_pop_box_el">Bedroom Furniture</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_05_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Bedroom Furniture</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mattresses</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Beds</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Wardrobes</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Side Tables</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">TV Units</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Office Tables</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Office Chairs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bookshelves</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bar Cabinets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bar Stools</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Rocking Chairs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Benches</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_06"><div class="fur_pop_box_el">Space Saving Furniture</div></div>
+
+                <div class="fur_pop_box_el_cont" id="fur_07"><div class="fur_pop_box_el">Home Decor</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_07_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Home Decor</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Lightning</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Stickers and Wallpaper</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Painting and Posters</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Clocks</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Showpieces and Decoratives</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Wall Decor</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Flower and Vases</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Home Fragrances</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Windchimes and Dream catcher</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Photo frames and Albums</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Diyas,Candels and Holders</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Festive and Gifting</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_08"><div class="fur_pop_box_el">Tools and Utility</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_08_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Tools and Utility</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Hand Tools</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Power Tools</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Measuring Tools</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Home Storage and Organizers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Umbrellas</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Appliances Filter and Cartridges</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cloth Dryer Stand</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Appliance Filter and Stand</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">laundary Organization</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Lock and Security</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Fire and Personal Safety</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Paint Supplies and Equipments</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_09"><div class="fur_pop_box_el">Work Space Furniture</div></div>
+
+                <div class="fur_pop_box_el_cont" id="fur_10"><div class="fur_pop_box_el">Kids Furniture</div></div>
+
+                <div class="fur_pop_box_el_cont" id="fur_11"><div class="fur_pop_box_el">Lightings and Electricals</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_11_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Lightings and Electricals</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bulbs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Emergency Lights</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Torches</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Tubeights</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Extension Cords</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Outdoor Lamps</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Batteries</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Electrical Wire</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Electical Socket </div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Electric Door Bell</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Solar light,Panels and Batteries</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Electical Hardware</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_12"><div class="fur_pop_box_el">Cleaning Bath</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_12_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Cleaning Bath</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Mops</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cleaning Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">House Hold Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Air Fresheners</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cleaning Gloves</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Liquid Detergents</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Taps and Faucet</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Toothbrush Holder</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bathroom Rack and Shelves</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Shover Heads</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bath and Kitchen Fittngs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bathroom Accessories</div></div>
+                </div>       
+                </div>
+
+                <div class="fur_pop_box_el_cont" id="fur_13"><div class="fur_pop_box_el">Pets and Gardening</div><div class="fur_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="fur_13_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Pets and Gardening</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Plant Seeds</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Soil Manure</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Pots and Planters</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Plant and Planters</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Garden tool set</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Watering Equipments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Dogs Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cat Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Fish and Aquatic</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Pets Grooming and Hygiene</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Pet Toys</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Pets Health and Safety</div></div>
+                </div>       
+                </div>   
+                
+            </div>
+        </div>   
+<!--Appliences -->      
+        <div class="choice"><div class="choice_cont"><img src="Images/appliences.png" alt="No Connection" class="choice_img"><p class="choice_name">Appliences</p></div></div>  
+<!--Travel --> 
+        <div class="choice"><div class="choice_cont"><img src="Images/travel.png" alt="No Connection" class="choice_img"><p class="choice_name">Travel</p></div></div>   
+<!--Toys -->            
+        <div class="choice" id="choice_toys"><div class="choice_cont"><img src="Images/toys.png" alt="No Connection" class="choice_img"><div class="choice_name_cont"><p class="choice_name" >Toys and More</p><p class="choice_arrow" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rotating_arrow" class="rotate_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></p></div></div>
+    
+            <div id="toys_pop_box">
+               
+                <div class="toys_pop_box_el_cont" id="toys_01"><div class="toys_pop_box_el">Beauty and Personal Care</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_01_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Beauty and Personal Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bath and Oral Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Personal Hygiene</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Eye Makeup</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Face Makeup</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Lip Makeup</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Hair Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bath Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Women's Personal Hygiene</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Body and Skin Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_02"><div class="toys_pop_box_el">Men's Grooming</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_02_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Men's Grooming</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Face Washes</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Beard Oils</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Hair Styling</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Shaving Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Aftershave</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Face Cream and Face Packs</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Soaps and Bodywash</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Men's Grooming Combos</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sexual Wellness</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_03"><div class="toys_pop_box_el">Foods and Drink</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_03_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Foods and Drink</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Nuts and Dry Fruits</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cooking Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Breakfast Items</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Snacks Corner</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Jeans, spreads and Honey</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Ready to cook and Eat</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Chocolates</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baking Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sweets Store</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_04"><div class="toys_pop_box_el">Nutrition and Health Care</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_04_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Nutrition and Health Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Masks</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Ayurvadic Supplements</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Protein Suplements</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Woman's Safety</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Home Medicines</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Home Medical Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Healthcare Combos</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Professional Medical Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_05"><div class="toys_pop_box_el">Baby Care</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_05_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Baby Care</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Diapers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Wipes</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Bath and Grooming</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Gift Sets and Combos</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Medical and Healthcare</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Nursing and Breast Feeding</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Feeding, Bottles,Utensils and Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Food</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Bedding</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Gear</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_06"><div class="toys_pop_box_el">Toys and School Supplies</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_06_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Toys and School Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Remote Control Toys</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Soft Toys</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Puzzles</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Board Games</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Learning and Educational Toys</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cars and Die-Cast Vehicles</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Baby Toys</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gifting Toys</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">School Bags and Backpacks</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">School Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_07"><div class="toys_pop_box_el">Sports and Fitness</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_07_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Pets and Gardening</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Badminton</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cricket</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Cycling</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Football</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Fitness Equipments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Supports</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Shakers and Slippers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gym Gloves</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Dumbbells</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Yoga</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_08"><div class="toys_pop_box_el">Books</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_08_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Books</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Test prep</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Academics</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Literature and Fiction</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Non Fiction</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Young Readers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Audio Books</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_09"><div class="toys_pop_box_el">Music</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_09_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Music</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Musical Instruments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Music and Tv shows</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Acoustic Guitars</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Keys and Synthesizer</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Microphones</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Studio and Stage Equipment</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">String Instruments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Indian Instruments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Wind Instruments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Musical Keyboards</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_10"><div class="toys_pop_box_el">Stationery and Office Supplies</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_10_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Stationery and Office Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Pens and Gift Sets</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Notebooks and Diaries</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Art Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Calculators</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Keychains</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Card Holders</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Desk Organizers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Office Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Office Equipments</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Party Supplies</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Top Brand Deals</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_11"><div class="toys_pop_box_el">Auto Accessories</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_11_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Auto Accessories</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Bike Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Car and Bike Covers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Car Air Freashner</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Car Bluetooth Device</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Car Lubricants</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Car Media Player</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Helmet</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Vehicle Washing and Cleaning Products</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Types</div></div>
+                </div>       
+                </div>
+                <div class="toys_pop_box_el_cont" id="toys_12"><div class="toys_pop_box_el">Safety and Hygiene Essentials</div><div class="toys_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+                <div class="pop_up_box" id="toys_12_pop_up">
+                    <div class="pop_up_heading_cont"><div class="pop_up_heading">More in Safety and Hygiene Essentials</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">View All</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Masks</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Sanitizers</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Hand Wash</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Gloves</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">PPE Kits</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Face Sheilds</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">UV Sterilizers Box</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Safety Goggles</div></div>
+                    <div class="pop_up_el_cont"><div class="pop_up_el">Vitamins for Immunity</div></div>
+                </div>       
+                </div>
+            
+            </div>   
+        </div>
+<!--Two Wheeler -->            
+        <div class="choice" style="margin-right:8.7vw;" id="choice_tw"><div class="choice_cont"><img src="Images/twowheeler.png" alt="No Connection" class="choice_img"><div class="choice_name_cont"><p class="choice_name" >Two Wheeler</p><p class="choice_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="rotating_arrow" class="rotate_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></p></div></div>
+   
+            <div id="tw_pop_box">
+               
+                <div class="tw_pop_box_el_cont"><div class="tw_pop_box_el">Electric Vehicles</div><div class="tw_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div></div>
+                <div class="tw_pop_box_el_cont"><div class="tw_pop_box_el">Petrol Vehicles</div><div class="tw_pop_box_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="more_arrow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div></div>
+                
+            </div>   
+        </div>      
+    </div>   
+
+<!--Banners --> 
+<div id="banner_1"><img src="images/banner1.png" alt="No Connection" id="banner_1_img"></div>
+<div id="banner_2"><img src="images/banner2.png" alt="No Connection" id="banner_1_img"></div>
+
+
+
+<div  class="container_1">
+
+    <div class="container_1_info">
+        <div class="container_1_name">Best of Electronics</div>
+        <div class="container_1_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+    </div>
+
+    <div class="container_1_items">
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/fasttrack.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Fastrack Smart Watches</div>
+            <div class="container_1_item_extra">from ₹4,599</div>
+        </div>
+
+        
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/jblspeaker.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">JBL Bluetooth Speaker</div>
+            <div class="container_1_item_extra">from ₹3,299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/earbuds.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Best Selling EarBuds</div>
+            <div class="container_1_item_extra">SHOP NOW</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/camera.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">DSLR Camera</div>
+            <div class="container_1_item_extra">from ₹27,899 </div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/boat.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Boat Smart Watches</div>
+            <div class="container_1_item_extra">EXPLORE</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/printer.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Digital Printers</div>
+            <div class="container_1_item_extra">from ₹12,999</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/earphone.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Earphones</div>
+            <div class="container_1_item_extra">from ₹489</div>
+        </div>
+
+
+    </div>
+</div>
+
+<div  class="container_1">
+
+    <div class="container_1_info">
+        <div class="container_1_name">Beauty, Foods, Toys and More</div>
+        <div class="container_1_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+    </div>
+
+    <div class="container_1_items">
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images\whey.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Protein Powder</div>
+            <div class="container_1_item_extra">from ₹1,199</div>
+        </div>
+
+        
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/treadmill.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">SHOP NOW</div>
+            <div class="container_1_item_extra">from ₹53,299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/torch.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Best Selling Torch</div>
+            <div class="container_1_item_extra">from ₹299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/facewash.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Recommended Facewash</div>
+            <div class="container_1_item_extra">from ₹199 </div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/dumbell.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Dumbell (20kg)</div>
+            <div class="container_1_item_extra">On Discount</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/almond.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Califromnian Almonds</div>
+            <div class="container_1_item_extra">from ₹999</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/cover.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Mobile Covers</div>
+            <div class="container_1_item_extra">EXPLORE MORE</div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<div class="container_2">
+    <div class="container_2_block">
+
+        <div class="container_2_block_info">
+            <div class="container_2_block_name">Monsoon Essentials</div>
+            <div class="container_2_block_more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+        </div>
+        
+    <div class="item_container">
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/umbrellas2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Umbrella (pack of 4)</div>
+                <div class="container_2_block_row_column_note">From ₹999</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/raincoat2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Best Raincoats</div>
+                <div class="container_2_block_row_column_note">From ₹1,999</div>
+            </div>
+        </div>
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/stand2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">cloath Dryer Stand</div>
+                <div class="container_2_block_row_column_note">EXPLORE</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/umbrella2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Umbrella</div>
+                <div class="container_2_block_row_column_note">Shop Now</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container_2_block">
+        
+
+            <div class="container_2_block_info">
+                <div class="container_2_block_name">Footwear</div>
+                <div class="container_2_block_more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+            </div>
+
+      
+            <div class="item_container">
+                <div class="container_2_block_row">  
+    <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s12.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Sport Shoes</div>
+                <div class="container_2_block_row_column_note">From ₹5,999</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s22.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Original Nike Shoes</div>
+                <div class="container_2_block_row_column_note">From ₹8,999</div>
+            </div>
+        </div>
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s32.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Sandels from Boys</div>
+                <div class="container_2_block_row_column_note">On Discount</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s42.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Frommal Shoes</div>
+                <div class="container_2_block_row_column_note">From ₹2,999</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container_2_block">
+
+        <div class="container_2_block_info">
+                <div class="container_2_block_name">Treanding Gadgets</div>
+                <div class="container_2_block_more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+        </div>
+
+    <div class="item_container">    
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s52.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Foldable Mobile Phones</div>
+                <div class="container_2_block_row_column_note">Limited Time Sale</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s62.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Vision Pro</div>
+                <div class="container_2_block_row_column_note">From ₹34,999</div>
+            </div>
+        </div>
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s72.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Personal Voice Assistant</div>
+                <div class="container_2_block_row_column_note">Shop Now</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/s82.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Tablets</div>
+                <div class="container_2_block_row_column_note">EXPLORE</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="container_2">
+    <div class="container_2_block">
+
+        <div class="container_2_block_info">
+            <div class="container_2_block_name">Monsoon Essentials</div>
+            <div class="container_2_block_more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+        </div>
+        
+    <div class="item_container">
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/umbrellas2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Umbrella (pack of 4)</div>
+                <div class="container_2_block_row_column_note">From ₹999</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/raincoat2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Best Raincoats</div>
+                <div class="container_2_block_row_column_note">From ₹1,999</div>
+            </div>
+        </div>
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/stand2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">cloath Dryer Stand</div>
+                <div class="container_2_block_row_column_note">EXPLORE</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/umbrella2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Umbrella</div>
+                <div class="container_2_block_row_column_note">Shop Now</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="big_banner"><img src="Images/bigbanner.png" alt="" id="big_banner_img"></div>
+
+</div>
+
+
+<div  class="container_1">
+
+    <div class="container_1_info">
+        <div class="container_1_name">Beauty, Foods, Toys and More</div>
+        <div class="container_1_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+    </div>
+
+    <div class="container_1_items">
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images\whey.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Protein Powder</div>
+            <div class="container_1_item_extra">from ₹1,199</div>
+        </div>
+
+        
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/treadmill.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">SHOP NOW</div>
+            <div class="container_1_item_extra">from ₹53,299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/torch.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Best Selling Torch</div>
+            <div class="container_1_item_extra">from ₹299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/facewash.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Recommended Facewash</div>
+            <div class="container_1_item_extra">from ₹199 </div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/dumbell.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Dumbell (20kg)</div>
+            <div class="container_1_item_extra">On Discount</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/almond.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Califromnian Almonds</div>
+            <div class="container_1_item_extra">from ₹999</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/cover.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Mobile Covers</div>
+            <div class="container_1_item_extra">EXPLORE MORE</div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div  class="container_1">
+
+    <div class="container_1_info">
+        <div class="container_1_name">Best of Electronics</div>
+        <div class="container_1_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+    </div>
+
+    <div class="container_1_items">
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/fasttrack.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Fastrack Smart Watches</div>
+            <div class="container_1_item_extra">from ₹4,599</div>
+        </div>
+
+        
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/jblspeaker.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">JBL Bluetooth Speaker</div>
+            <div class="container_1_item_extra">from ₹3,299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/earbuds.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Best Selling EarBuds</div>
+            <div class="container_1_item_extra">SHOP NOW</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/camera.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">DSLR Camera</div>
+            <div class="container_1_item_extra">from ₹27,899 </div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/boat.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Boat Smart Watches</div>
+            <div class="container_1_item_extra">EXPLORE</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/printer.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Digital Printers</div>
+            <div class="container_1_item_extra">from ₹12,999</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/earphone.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Earphones</div>
+            <div class="container_1_item_extra">from ₹489</div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container_2">
+
+
+    <div id="big_banner" style="margin-left: 0px; margin-right: 0px;"><img src="Images/bigbanner2.png" alt="" id="big_banner_img"></div>
+
+    <div class="container_2_block">
+
+        <div class="container_2_block_info">
+            <div class="container_2_block_name">Monsoon Essentials</div>
+            <div class="container_2_block_more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+        </div>
+        
+    <div class="item_container">
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/umbrellas2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Umbrella (pack of 4)</div>
+                <div class="container_2_block_row_column_note">From ₹999</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/raincoat2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Best Raincoats</div>
+                <div class="container_2_block_row_column_note">From ₹1,999</div>
+            </div>
+        </div>
+        <div class="container_2_block_row">
+            <div class="container_2_block_row_column">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/stand2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">cloath Dryer Stand</div>
+                <div class="container_2_block_row_column_note">EXPLORE</div>
+            </div>
+            <div class="container_2_block_row_column" style="margin-right: 0px;">
+                <div class="container_2_block_row_column_imgcontainer"><img src="Images/umbrella2.png" alt="No Connection" class="container_2_block_row_column_img"></div>
+                <div class="container_2_block_row_column_name">Umbrella</div>
+                <div class="container_2_block_row_column_note">Shop Now</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+
+</div>
+
+
+<div  class="container_1" style="margin-bottom: 100px;">
+
+    <div class="container_1_info">
+        <div class="container_1_name">Best of Electronics</div>
+        <div class="container_1_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+    </div>
+
+    <div class="container_1_items">
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/fasttrack.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Fastrack Smart Watches</div>
+            <div class="container_1_item_extra">from ₹4,599</div>
+        </div>
+
+        
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/jblspeaker.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">JBL Bluetooth Speaker</div>
+            <div class="container_1_item_extra">from ₹3,299</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/earbuds.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Best Selling EarBuds</div>
+            <div class="container_1_item_extra">SHOP NOW</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/camera.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">DSLR Camera</div>
+            <div class="container_1_item_extra">from ₹27,899 </div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/boat.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Boat Smart Watches</div>
+            <div class="container_1_item_extra">EXPLORE</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/printer.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Digital Printers</div>
+            <div class="container_1_item_extra">from ₹12,999</div>
+        </div>
+
+        <div class="container_1_item">
+            <div class="container_1_item_look"><img src="Images/earphone.png" alt="No Connection" class="container_1_item_pic"></div>
+            <div class="container_1_item_name">Earphones</div>
+            <div class="container_1_item_extra">from ₹489</div>
+        </div>
+
+
+    </div>
+</div>
+
+<footer id="footer">
+    <div id="footer_cont">
+        <div class="footer_cont_1">
+            <div class="footer_cont_1_heading">About</div>
+            <div class="footer_cont_1_el">Contact Us</div>
+            <div class="footer_cont_1_el">About Us</div>
+            <div class="footer_cont_1_el">Careers</div>
+            <div class="footer_cont_1_el">Flipkart Stories</div>
+            <div class="footer_cont_1_el">Press</div>
+            <div class="footer_cont_1_el">Corporate Information</div>
+        </div>
+        <div class="footer_cont_1">
+            <div class="footer_cont_1_heading">Group Companies</div>
+            <div class="footer_cont_1_el">Myntra</div>
+            <div class="footer_cont_1_el">CleanTrip</div>
+            <div class="footer_cont_1_el">Shopsy</div>
+        </div>
+        <div class="footer_cont_1">
+            <div class="footer_cont_1_heading">Help</div>
+            <div class="footer_cont_1_el">Payment</div>
+            <div class="footer_cont_1_el">Shipping</div>
+            <div class="footer_cont_1_el">Cancellation and Return</div>
+            <div class="footer_cont_1_el">FAQ</div>
+            <div class="footer_cont_1_el">Report Infringement</div>
+        </div>
+        <div class="footer_cont_1">
+            <div class="footer_cont_1_heading">Consumer Policy</div>
+            <div class="footer_cont_1_el">Cancellation and Return</div>
+            <div class="footer_cont_1_el">Terms of Use</div>         
+            <div class="footer_cont_1_el">Privacy</div>
+            <div class="footer_cont_1_el">Security</div>         
+            <div class="footer_cont_1_el">Sitemap</div>
+            <div class="footer_cont_1_el">Grievance Redressal</div>
+            <div class="footer_cont_1_el">EPR Compliance</div>
+        </div>
+        <div class="footer_cont_1" style="margin-left: 5px; padding-left: 12px; border-left:2px solid #454d5e;">
+            <div class="footer_cont_1_heading">Mail Us:</div>
+            <div class="footer_cont_1_el" style="line-height: 19px; word-spacing: 4px; margin: 3px; letter-spacing: 1px;">Flipkart Internet Private Limited, Buildings Allyss Begonia and Clove Embassy Tech Village, Outer ring road, Devarabeesanahalli Village, Bengluru, 560103 Karnataka, India </div>
+            <div class="footer_cont_1_heading" style="margin-top: 12px;">Social:</div>
+            <div id="icon_container">
+                <div class="icon_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></div>
+                <div class="icon_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></div>
+                <div class="icon_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></div>
+            </div>
+        </div>
+        <div class="footer_cont_1" style="margin-right: 0px; ">
+            <div class="footer_cont_1_heading">Registered Office Address:</div>
+            <div class="footer_cont_1_el"  style="line-height: 19px; word-spacing: 4px; margin: 3px; letter-spacing: 1px;">Flipkart Internet Private Limited, Buildings Allyss Begonia and Clove Embassy Tech Village, Outer ring road, Devarabeesanahalli Village, Bengluru, 560103 Karnataka, India<br>CIN : U51109KA2012PTC066107 <br>Telephone : <span style="color:#2874ef ;">044-45614700</span> / <span style="color: #2874ef;">044-67415800</span> </div>
+        </div>
+
+
+    </div>
+    
+
+    <div id="bar">
+        <div id="bar_cont">
+            <div class="bar_cont_el"><div class="bar_cont_el_icon"><div class="bar_cont_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z"/></svg></div></div><div class="bar_cont_el_text">Become A Seller</div></div>
+            <div class="bar_cont_el"><div class="bar_cont_el_icon"><div class="bar_cont_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg></div></div><div class="bar_cont_el_text">Advertise</div></div>
+            <div class="bar_cont_el"><div class="bar_cont_el_icon"><div class="bar_cont_el_icon_img"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"/></svg></div></div><div class="bar_cont_el_text">Gift Card</div></div>
+            <div class="bar_cont_el"><div class="bar_cont_el_icon" style="width:8%"><div class="bar_cont_el_icon_img" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" ><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 160c0-35.3 28.7-64 64-64l32 0c35.3 0 64 28.7 64 64l0 3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74l0 1.4c0 17.7 14.3 32 32 32s32-14.3 32-32l0-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7l0-3.6c0-70.7-57.3-128-128-128l-32 0C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg></div></div><div class="bar_cont_el_text">Help Center</div></div>
+            <div class="bar_cont_el"><div id="copyright">&copy 2007-2024 Flipkart.com</div></div>
+            <div class="bar_cont_el"><div class="bar_cont_el_icon"><div id="band"><img src="Images/band.png" alt="No Connection" id="band_img"></div></div><div class="bar_cont_el_text"></div></div>
+        </div>
+    </div>
+    
+
+</footer>
+
+
+
+</body>
+</html>
